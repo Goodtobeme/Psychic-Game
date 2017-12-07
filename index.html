@@ -2,90 +2,23 @@
 <html>
 <head>
 	<title>Psychic Game</title>
-
-   <script src="C:/Users/Gene/Psychic-Game/assets/javascript/game.js"></script>
    
    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     
- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-   
- 
 </head>
 <body>
-<div id="game">
-<header>
-<h1 id="psychic">The Psychic Game</h1>
-</header>
-<p>Press any letter to start playing</p> 
+  <div id="game">
+  <header>
+    <h1 id="psychic">The Psychic Game</h1>
+  </header>
+  <p>Press any letter to start playing</p> 
 
-<p>Wins</p>
-<p>Losses</p>
-<p>Your Guesses Left</p>
-</div>
+  <p>Wins</p>
+  <p>Losses</p>
+  <p>Your Guesses Left</p>
+  </div>
 
-
-
- <!-- <script type="text/javascript">
-
-// Here is an variable array of letters
-    var options = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "_"]; 
-      
-
-     var wins = 0;
-     var losses = 0;
-     var yourGuessesLeft = 10;
-     var computerGuess = options[Math.floor(Math.random()*options.length)];
-		      
-
-     document.onkeyup = function() {
-
-      	  
-      
-        // I need the user to make a choice
-         var userguess = String.fromCharCode(event.keyCode).
-            toUpperCase();
-
-             // Computer to make a choice
-        
-
-         var winsLoseyourGuessesLeft = yourGuessesLeft;
-             	// Capture those choice
-	         
-	     console.log("You chose " + userguess + " computer chose " + computerGuess);
-	         
-            // Computer to make a guess  User to make a guess 
-              if (userguess== computerGuess) {
-              	    computerGuess = options[Math.floor(Math.random()*options.length)];
-            		wins++;
-            		winsLoseyourGuessesLeft ="win";
-            		yourGuessesLeft = 10;
-            }
-             else {
-          		yourGuessesLeft --;
-	           winsLoseyourGuessesLeft = yourGuessesLeft;
-	          
-            if (yourGuessesLeft == 0) {
-	           		losses++;
-	           		computerGuess = options[Math.floor(Math.random()*options.length)];
-	           		winsLoseyourGuessesLeft = "lose";
-	           		yourGuessesLeft = 10;
-	           	}
-           }
-         
-                      // alert Please choose letter
-                     // Compare these choices, and determine a win, loss, or yourGuessesLeft
-            var html = "<p>Guess what letter I'm thinking of</p>" +  "<p>wins: " + wins + "</p>" +
-                         "<p>Losses: " + losses + "</p>" +
-                         "</p> " + "<p>yourGuessesLeft: " + winsLoseyourGuessesLeft +  
-                        "</p>";
-
-                          // Display the result to the user 
-                         document.querySelector('#game').innerHTML = html;
-                     }
-          
-          </script>  -->
-   
-        </body>
-        </html>
+    <script src="assets/javascript/game.js"></script>
+    
+  </body>
+</html>
